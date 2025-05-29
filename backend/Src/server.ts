@@ -8,7 +8,6 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-// ✅ UTILISATION CORRECTE DU ROUTER
 app.use("/tasks", tasksRouter);
 
 app.use((req, res) => {
